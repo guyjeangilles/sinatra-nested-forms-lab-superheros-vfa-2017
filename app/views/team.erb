@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Meet <%=@team_name%><h1>
+    <h2>Team Motto: <%=@team_motto%></h2>
+      <% @team_members.each.with_index do |hero, index| %>
+        <h3>Hero Name: <%=@hero_name[index] %></h3>
+          <ul>
+            <p>Hero Power: <%=@hero_power[index] %></p>
+            <p><%=@hero_bio[index] %></p>
 
-
-
+            <p>Hero Biography: <%=@hero_bio[index] %></p>
+            <p><%=@hero_bio[index] %></p>
+          </ul>
+      <% end %>
+  </body>
+</html>
